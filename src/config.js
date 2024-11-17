@@ -58,20 +58,20 @@ const config = {
     bot: {
         name: "NexusCoders Bot",
         version: "2.0.0",
-        prefix: ".",
+        prefix: "$",
         sessionName: "nexus-session",
-        ownerNumber: ["FIRST_OWNER_NUMBER@s.whatsapp.net", "SECOND_OWNER_NUMBER@s.whatsapp.net",], //add owmer numbers in here with country code e.g 234xxxxxxxxx@s.whatsapp.net
-        botNumber: "BOT_NUMBER@s.whatsapp.net",//add bot number here
+        ownerNumber: ["2348121662697@s.whatsapp.net"], //add owmer numbers in here with country code e.g 234xxxxxxxxx@s.whatsapp.net
+        botNumber: "2348087132007@s.whatsapp.net",//add bot number here
         ownerName: "NexusCoders",
         language: "en",
-        timezone: "Asia/Kolkata",
+        timezone: "Africa/Lagos",
         homePage: "https://github.com/NexusCoders-cyber/NexusCoders-Bot.git",
         autoRead: true,
         selfBot: false,
         publicMode: true,
         privateMode: false,
         maxFileSize: 100,
-        supportGroups: ["SUPPORT_GROUP_ID@g.us"],
+        supportGroups: ["120363025246779146@g.us"],
         logLevel: "silent"
     },
     limits: {
