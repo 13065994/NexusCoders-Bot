@@ -46,7 +46,7 @@ module.exports = {
           response += `┗━━━━━━━━°⌜ ${category} ⌟°━━━━━━━━┛\n`;
         });
         response += `\n├───────────❍\n`;
-        response += `│★Type menu list to sort menu alphabetically\n`;
+        response += `│★Type menu list to sort menu alphabetically\nTotal Commands: ${cmd.size}`;
         response += `╰───────────❍\n`;
       } else {
         const pageSize = 20;
@@ -60,7 +60,7 @@ module.exports = {
         });
 
         response += `\n├───────────────────────────❍\n`;
-        response += `│❏ Total Pages: ${totalPages}\n`;
+        response += `│❏ Total Pages: ${totalPages}\nTotal Cmds ${cmd.size}`;
         response += `│❏ Current Page: ${pageNumber}\n`;
         response += `│★Type menu category to sort menu\n`;
         response += `│★according to category\n`;
