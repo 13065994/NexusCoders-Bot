@@ -60,11 +60,11 @@ const config = {
         version: "2.0.0",
         prefix: ".",
         sessionName: "nexus-session",
-        ownerNumber: ["FIRST_OWNER_NUMBER@s.whatsapp.net", "SECOND_OWNER_NUMBER@s.whatsapp.net",], //add owmer numbers in here with country code e.g 234xxxxxxxxx@s.whatsapp.net
-        botNumber: "BOT_NUMBER@s.whatsapp.net",//add bot number here
+        ownerNumber: ["2348121662697@s.whatsapp.net"], //add owmer numbers in here with country code e.g 234xxxxxxxxx@s.whatsapp.net
+        botNumber: "234807132007@s.whatsapp.net",//add bot number here
         ownerName: "NexusCoders",
         language: "en",
-        timezone: "Asia/Kolkata",
+        timezone: "Africa/Lagos",
         homePage: "https://github.com/NexusCoders-cyber/NexusCoders-Bot.git",
         autoRead: true,
         selfBot: false,
