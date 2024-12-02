@@ -13,9 +13,9 @@ const typingStates = new Map();
 const recordingStates = new Map();
 
 const formatters = {
-    box: (text) => `╔═══『 ${text} 』═══╗\n║\n╚══════════════════════╝`,
+    box: (text) => `${text}`,
 
-    footer: () => `\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n❝ Powered by Nexus v1 ❞`
+    footer: () => ``
 };
 
 function handleSpam(jid, sock) {
@@ -173,10 +173,14 @@ async function handleMessage(sock, message) {
         
         if (messageText.toLowerCase() === 'prefix') {
             await sock.sendMessage(jid, {
-                text: formatters.box('NEXUS BOT PREFIX') + '\n' +
-                      '│ 📱Current Prefix: ' + config.bot.prefix + '\n' +
-                      '│🖥️ Status: 🟢 Online\n' +
-                      '╰───────────────────────' +
+                text: formatters.box('╭╾╾╾╾╾╾╾╾❍') + '\n' +
+                      '┃⭖𝗦𝗬𝗦𝗧𝗘𝗠 𝗣𝗥𝗘𝗙𝗜𝗫'
+                      '┣➤ _*${config.bot.prefix}*_'
+                      '┃⭖𝗖𝗛𝗔𝗧 𝗣𝗥𝗘𝗙𝗜𝗫'
+                      '┣➤ _*' + config.bot.prefix + '*_'
+                      '┃⭖ _𝚃𝚢𝚙𝚎 *' +config.bot.prefix' + '𝚖𝚎𝚗𝚞* 𝚝𝚘 𝚜𝚎𝚎 𝚕𝚒𝚜𝚝_'
+                      '╰╾╾╾╾╾╾╾╾╾╾╾❍'
+✓ 𝗡𝗘𝗫𝗨𝗦-𝗠𝗗 𝗩𝟭
                       formatters.footer()
     },   {  quoted: message });
             return;
@@ -185,11 +189,11 @@ async function handleMessage(sock, message) {
         if (messageText === config.bot.prefix) {
 
           await sock.sendMessage(jid, {
-                text: formatters.box('WELCOME TO NEXUS v1') + '\n' +
+                text: formatters.box('╭╾╾ WELCOME TO NEXUS v1❍') + '\n' +
                       '│ 🤖 Bot Prefix: ' + config.bot.prefix + '\n' +
                       '│ 📚 Commands: ' + config.bot.prefix + 'menu\n' +
                       '│ ⏰ Uptime: 24/7\n' +
-                      '╰───────────────────────' +
+                      '╰──────────────────' +
                       formatters.footer()
     },   {  quoted: message });
             return;
